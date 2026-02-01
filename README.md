@@ -2,18 +2,6 @@
 
 A data-sorting project using two stacks and a limited set of operations, with the goal of finding the most efficient algorithm.
 
-## 📋 Table of Contents
-
-- Description
-- Rules
-- Operations
-- Installation
-- Usage
-- Algorithms
-- Project Structure
-- Compilation
-- Examples
-
 ## 📝 Description
 
 **Push_swap** is a project from 42 School that consists of sorting integers using two stacks (`a` and `b`) and a restricted set of operations.
@@ -108,8 +96,8 @@ The project implements multiple sorting strategies depending on the number of el
 - Sort the remaining 3
 - Push the 2 values back to `a`
 
-### 🔹 More than 5 elements: Turkish sort
-- 42-based sorting algorithm
+### 🔹 More than 5 elements: Radix sort
+-Use Radix sort
 
 ## 🔨 Compilation
 
