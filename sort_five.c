@@ -14,7 +14,7 @@
 
 void	sort_five(t_stack **stack_a, t_stack **stack_b)
 {
-	int	min;
+	int		min;
 	t_stack	*tmp;
 
 	while (stack_len(*stack_a) > 3)

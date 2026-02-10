@@ -6,7 +6,7 @@
 /*   By: ilbouidd <ilbouidd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 21:44:50 by ilbouidd          #+#    #+#             */
-/*   Updated: 2026/02/01 00:30:08 by ilbouidd         ###   ########.fr       */
+/*   Updated: 2026/02/09 13:59:04 by ilbouidd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void				push_a(t_stack **stack_a, t_stack **stack_b);
 void				push_b(t_stack **stack_a, t_stack **stack_b);
 int					stack_len(t_stack *stack);
 void				sort_all(t_stack **stack_a, t_stack **stack_b);
-int	second_part(t_stack	**stack_a, t_stack **stack_b);
+int					second_part(t_stack **stack_a, t_stack **stack_b);
 void				sort_two(t_stack **stack_a);
 void				sort_just_three(t_stack **stack_a);
 void				sort_just_three_second(t_stack **stack_b, int first,
@@ -53,13 +53,14 @@ void				free_stack(t_stack *stack);
 long				strlen_split(char **str);
 void				free_split(char **split);
 int					is_sorted(t_stack *stack);
-void sort_all(t_stack **stack_a, t_stack **stack_b);
-void radix_sort(t_stack **stack_a, t_stack **stack_b);
-int get_max_bits(t_stack *stack_a);
-void    index_stack(t_stack *a);
-void	sort_five(t_stack **a, t_stack **b);
-// void	print_value(t_stack *stack);
-void	print_index(t_stack *stack);
-
+void				sort_all(t_stack **stack_a, t_stack **stack_b);
+void				radix_sort(t_stack **stack_a, t_stack **stack_b);
+int					get_max_bits(t_stack *stack_a);
+void				index_stack(t_stack *a);
+void				sort_five(t_stack **a, t_stack **b);
+//void				print_value(t_stack *stack);
+//void				print_index(t_stack *stack);
+int					ac_two(char **av, char ***split, int **tab,
+						t_stack **stack_a);
 
 #endif

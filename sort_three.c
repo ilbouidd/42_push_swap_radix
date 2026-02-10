@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   trit_three.c                                        :+:      :+:    :+:   */
+/*   trit_three.c                                        :+:      :+:    :+:  */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ilbouidd <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,6 @@
 
 #include "push_swap.h"
 
-
 void	sort_just_three_second(t_stack **stack_a, int first, int second,
 		int third)
 {
@@ -22,8 +21,8 @@ void	sort_just_three_second(t_stack **stack_a, int first, int second,
 		swap_a(stack_a);
 	else if (first > second && second > third)
 	{
-			swap_a(stack_a);
-			reverse_rotate_a(stack_a);
+		swap_a(stack_a);
+		reverse_rotate_a(stack_a);
 	}
 	else if (first > second && second < third && first > third)
 		rotate_a(stack_a);
@@ -33,7 +32,7 @@ void	sort_just_three_second(t_stack **stack_a, int first, int second,
 		rotate_a(stack_a);
 	}
 	else if (first < second && second > third && first > third)
-			reverse_rotate_a(stack_a);
+		reverse_rotate_a(stack_a);
 }
 
 void	sort_just_three(t_stack **stack_a)
@@ -47,4 +46,3 @@ void	sort_just_three(t_stack **stack_a)
 	third = (*stack_a)->next->next->value;
 	sort_just_three_second(stack_a, first, second, third);
 }
-

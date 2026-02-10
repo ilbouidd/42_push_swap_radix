@@ -12,54 +12,54 @@
 
 #include "push_swap.h"
 
-void    free_stack(t_stack *stack)
+void	free_stack(t_stack *stack)
 {
-    t_stack *tmp;
+	t_stack	*tmp;
 
-    while (stack)
-    {
-        tmp = stack->next;
-        free(stack);
-        stack = tmp;
-    }
+	while (stack)
+	{
+		tmp = stack->next;
+		free(stack);
+		stack = tmp;
+	}
 }
 
-long    strlen_split(char **str)
+long	strlen_split(char **str)
 {
-    long    i;
+	long	i;
 
-    i = 0;
-    while (str[i])
-        i++;
-    return (i);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
 
-void free_split(char **split)
+void	free_split(char **split)
 {
-    int i = 0;
+	int	i;
 
-    if (!split)
-        return;
-
-    while (split[i])
-    {
-        free(split[i]);
-        i++;
-    }
-    free(split);
+	i = 0;
+	if (!split)
+		return ;
+	while (split[i])
+	{
+		free(split[i]);
+		i++;
+	}
+	free(split);
 }
 
-int is_sorted(t_stack *stack)
+int	is_sorted(t_stack *stack)
 {
-    if (!stack || !stack->next)
-        return (1);
-    while (stack->next)
-    {
-        if (stack->value > stack->next->value)
-            return (0);
-        stack = stack->next;
-    }
-    return (1);
+	if (!stack || !stack->next)
+		return (1);
+	while (stack->next)
+	{
+		if (stack->value > stack->next->value)
+			return (0);
+		stack = stack->next;
+	}
+	return (1);
 }
 
 int	stack_len(t_stack *stack)

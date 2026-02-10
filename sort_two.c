@@ -14,8 +14,8 @@
 
 void	sort_two(t_stack **stack_a)
 {
-	int first;
-	int second;
+	int	first;
+	int	second;
 
 	first = (*stack_a)->value;
 	second = (*stack_a)->next->value;

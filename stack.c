@@ -6,7 +6,7 @@
 /*   By: ilbouidd <ilbouidd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 01:38:11 by ilbouidd          #+#    #+#             */
-/*   Updated: 2026/02/01 00:29:27 by ilbouidd         ###   ########.fr       */
+/*   Updated: 2026/02/09 14:00:24 by ilbouidd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,15 +56,15 @@ t_stack	*create_stack(t_stack *stack, int *tab, int ac)
 	return (stack);
 }
 
-// void	print_value(t_stack *stack)
-// {
-// 	t_stack	*tmp;
-
-// 	tmp = stack;
-// 	while (tmp)
+//void	print_value(t_stack *stack)
+//{
+//	t_stack	*tmp;
+//
+//	tmp = stack;
+//	while (tmp)
 // 	{
 // 		ft_printf("%d ", tmp->value);
 // 		tmp = tmp->next;
-// 	}
-// 	ft_printf("     values lines");
-// }
+//	}
+//	ft_printf("     values lines");
+//}
