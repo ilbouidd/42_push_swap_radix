@@ -114,7 +114,6 @@ make re       # Recompile everything
 
 ```makefile
 -Wall -Wextra -Werror    # All warnings treated as errors
--MMD -MP                  # Automatic dependency management
 -g3                       # Debug information
 ```
 
