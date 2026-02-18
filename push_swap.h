@@ -6,7 +6,7 @@
 /*   By: ilbouidd <ilbouidd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 21:44:50 by ilbouidd          #+#    #+#             */
-/*   Updated: 2026/02/09 13:59:04 by ilbouidd         ###   ########.fr       */
+/*   Updated: 2026/02/18 01:28:19 by ilbouidd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,8 @@ void				sort_five(t_stack **a, t_stack **b);
 //void				print_index(t_stack *stack);
 int					ac_two(char **av, char ***split, int **tab,
 						t_stack **stack_a);
+int					count_split(char **split);
+t_stack				*ac_2(char *av);
+t_stack				*ac_3(int ac, char **av);
 
 #endif

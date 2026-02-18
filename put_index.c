@@ -29,7 +29,7 @@ void	index_stack(t_stack *a)
 				i++;
 			cmp = cmp->next;
 		}
-		tmp->i = i;
+		tmp->index = i;
 		tmp = tmp->next;
 	}
 }
