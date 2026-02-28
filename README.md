@@ -1,3 +1,5 @@
+*This project has been created as part of the 42 curriculum by ilbouidd*
+
 # 🔄 Push_swap - Project 42
 
 A data-sorting project using two stacks and a limited set of operations, with the goal of finding the most efficient algorithm.
